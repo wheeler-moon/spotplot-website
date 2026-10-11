@@ -12,7 +12,7 @@ Preview locally by opening `index.html` in a browser.
 
 ## Before launch
 
-- [ ] **Stripe checkout links:** the Buy Standard / Buy Student buttons in `index.html` point to `#` (marked `TODO before launch`). Replace them with the Stripe checkout links.
+- [ ] **Stripe checkout links:** the Standard and Student buttons in `index.html` say "Coming soon" (marked `TODO at launch`). Turn them into Buy buttons linking to Stripe checkout, and change the download band's wording back to "from your purchase".
 - [x] **Domain:** spotplotapp.com is bought; the `CNAME` file holds it. Still to do: point its DNS at GitHub Pages (see below), then turn on "Enforce HTTPS" in Settings → Pages.
 - [x] **App links:** SpotPlot's Help → SpotPlot Website and Settings → Visit spotplotapp.com point here.
 - [ ] **Policies:** confirm the billing answers on the Support page (cancellation, student verification) match how Stripe is set up.

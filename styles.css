@@ -49,6 +49,8 @@ a:hover { text-decoration: underline; }
 .btn:hover { text-decoration: none; filter: brightness(1.1); }
 .btn-primary { background: var(--blue); color: #fff; }
 .btn-secondary { background: rgba(255, 255, 255, 0.12); color: var(--text); }
+.btn-soon { cursor: default; color: var(--text-2); }
+.btn-soon:hover { filter: none; }
 .btn-small { height: 34px; padding: 0 16px; font-size: 14px; border-radius: 17px; }
 
 /* Hero */
