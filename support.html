@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpotPlot Support</title>
+  <meta name="description" content="SpotPlot support: frequently asked questions, troubleshooting and how to get in touch.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="img/icon-256.png" alt="">SpotPlot</a>
+      <nav class="nav-links">
+        <a href="index.html#features" class="hide-sm">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="manual.html">Manual</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="index.html#download">Download</a>
+    </div>
+  </header>
+
+  <div class="wrap docs">
+    <aside class="toc">
+      <p>Support</p>
+      <a href="#contact">Contact</a>
+      <a href="#licenses">Licenses and Macs</a>
+      <a href="#billing">Plans and billing</a>
+      <a href="#app">Using the app</a>
+      <a href="#printing">Printing</a>
+      <a href="#trouble">Troubleshooting</a>
+    </aside>
+
+    <article class="doc">
+      <h1>Support</h1>
+      <p class="intro">Answers to common questions. For step-by-step help with every screen, see the <a href="manual.html">Manual</a>.</p>
+
+      <div class="contact-card" id="contact">
+        <h2>Get in touch</h2>
+        <p style="margin:0 0 18px">Questions, bugs or ideas: email us and include your SpotPlot version (Home → Settings → About SpotPlot). A screenshot helps.</p>
+        <a class="btn btn-primary" href="mailto:wheeler@wheelermoon.com?subject=SpotPlot%20support">Email support</a>
+      </div>
+
+      <h2 id="licenses">Licenses and Macs</h2>
+      <div class="faq" style="margin:0">
+        <details><summary>How many Macs can I use SpotPlot on?</summary><p>Standard and Student plans work on 2 Macs. If you try a third, SpotPlot shows "License in use on 2 Macs".</p></details>
+        <details><summary>I got a new Mac. How do I move my license?</summary><p>A Mac that hasn't opened SpotPlot for 30 days frees its spot automatically. Need it sooner? Email us and we'll free it right away. To bring your shows along, export each one from the old Mac and import it on the new one (see <a href="manual.html#share">Sharing</a>).</p></details>
+        <details><summary>Does SpotPlot work offline?</summary><p>Yes. SpotPlot checks your license whenever it's online and keeps working when it isn't, so a booth with no Wi-Fi is fine.</p></details>
+        <details><summary>Where do I find my license key?</summary><p>It's in your purchase email. In the app it's under Home → Settings → Account.</p></details>
+      </div>
+
+      <h2 id="billing">Plans and billing</h2>
+      <div class="faq" style="margin:0">
+        <details><summary>What's the difference between the plans?</summary><p>Every plan has every feature. Standard is for working designers; Student is the same app at a lower price for students with a .edu email. Production (one flat fee per show, covering the designer and all operators) and Education (for schools) are coming soon. See <a href="index.html#pricing">Pricing</a>.</p></details>
+        <details><summary>How does student verification work?</summary><p>Buy the Student plan with your .edu email address. We may ask you to confirm it from that address.</p></details>
+        <details><summary>Can I switch between monthly and yearly, or cancel?</summary><p>Yes. Yearly saves 20% on Standard and 25% on Student. You can cancel any time, and SpotPlot keeps working until the end of the period you've paid for.</p></details>
+        <details><summary>What happens to my shows if my subscription ends?</summary><p>Your shows stay on your Mac. Export them as .spotplot files to keep a copy you can open again later.</p></details>
+      </div>
+
+      <h2 id="app">Using the app</h2>
+      <div class="faq" style="margin:0">
+        <details><summary>What do the T· numbers mean?</summary><p>T· is the spot cue number operators use to keep their place, printed under each LQ. Inserting cues makes them jump around; click <strong>Renumber T·</strong> in the cue list to number them 1, 2, 3… again. Your cue order never changes.</p></details>
+        <details><summary>What's the difference between Off and Tracked?</summary><p><strong>Off</strong> means the spot isn't used in that cue. <strong>Tracked</strong> means nothing changes: the spot carries on from the previous cue.</p></details>
+        <details><summary>How do I give the same gel load to every spot?</summary><p>Fill in one spot's color frames, then on each other spot choose <strong>Copy colors from…</strong> and pick that spot.</p></details>
+        <details><summary>I swapped operators between positions. Can I move their cues?</summary><p>Yes. In Show Settings → Spot Settings, use <strong>Swap</strong> to exchange all cue data between two spots for the whole show.</p></details>
+        <details><summary>How do I hide a detail like intensity from the printouts?</summary><p>Show Settings → Cue Settings. Untick <strong>Show on print</strong> (or <strong>Show on cue list</strong>) for that detail. Nothing is deleted; tick it again to bring it back.</p></details>
+        <details><summary>Can I undo a change?</summary><p>Yes. In the cue list, press <kbd>⌘Z</kbd>.</p></details>
+        <details><summary>How do I see the tips again?</summary><p>Choose Help → Show Tips Again.</p></details>
+      </div>
+
+      <h2 id="printing">Printing</h2>
+      <div class="faq" style="margin:0">
+        <details><summary>Why is a cue on the next page when there's space at the bottom?</summary><p>SpotPlot never splits a cue across two pages, so an operator never has to flip mid-cue. If a cue doesn't fit, the whole cue moves to the next page.</p></details>
+        <details><summary>Why are some color frames highlighted in yellow?</summary><p>Yellow marks a color change: the first time each spot uses a color, and every time it changes.</p></details>
+        <details><summary>Can I print just part of the show?</summary><p>For a spot sheet, set a <strong>cue range</strong> using T· numbers, and hide Off or Tracked cues. Leave the range blank to print everything.</p></details>
+      </div>
+
+      <h2 id="trouble">Troubleshooting</h2>
+      <div class="faq" style="margin:0">
+        <details><summary>SpotPlot won't open, or macOS says it can't check it.</summary><p>Make sure you dragged SpotPlot into your Applications folder and opened it from there, not from the disk image. SpotPlot is signed and notarized by Apple. If macOS still won't open it, email us with a screenshot of the message.</p></details>
+        <details><summary>The print preview is blank or says it can't make the PDF.</summary><p>Quit SpotPlot and open it again. If it keeps happening, email us your SpotPlot version and which sheet you were printing.</p></details>
+        <details><summary>A .spotplot file won't import.</summary><p>Make sure you're on the latest version (SpotPlot → Check for Updates). Files made by a newer version need the newer app. Still stuck? Email us the file.</p></details>
+        <details><summary>How do I update SpotPlot?</summary><p>SpotPlot updates itself. Choose SpotPlot → Check for Updates to check now, or <a href="index.html#download">download the latest version</a> and replace the app in Applications. Your shows aren't affected.</p></details>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 SpotPlot</span>
+      <nav>
+        <a href="manual.html">Manual</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:wheeler@wheelermoon.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

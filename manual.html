@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpotPlot Manual</title>
+  <meta name="description" content="How to use SpotPlot: shows, spots and color frames, scenes, characters, the cue list, printing and sharing.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="img/icon-256.png" alt="">SpotPlot</a>
+      <nav class="nav-links">
+        <a href="index.html#features" class="hide-sm">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="manual.html" aria-current="page">Manual</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="index.html#download">Download</a>
+    </div>
+  </header>
+
+  <div class="wrap docs">
+    <aside class="toc">
+      <p>Manual</p>
+      <a href="#install">Install and sign in</a>
+      <a href="#overview">How SpotPlot works</a>
+      <a href="#new-show">Create a show</a>
+      <a href="#spots">Spots and color frames</a>
+      <a href="#dashboard">The show dashboard</a>
+      <a href="#scenes">Scenes</a>
+      <a href="#characters">Characters</a>
+      <a href="#cue-list">The cue list</a>
+      <a href="#cells">Filling in a cue</a>
+      <a href="#more">Highlights, notes and more</a>
+      <a href="#settings">Show Settings</a>
+      <a href="#spot-notes">Spot notes</a>
+      <a href="#print">Printing</a>
+      <a href="#share">Sharing and backups</a>
+      <a href="#shortcuts">Keyboard shortcuts</a>
+    </aside>
+
+    <article class="doc">
+      <h1>SpotPlot Manual</h1>
+      <p class="intro">Everything you need to go from an empty show to printed spot paperwork. New to SpotPlot? Tips also appear the first time you open each screen, and Help → Show Tips Again brings them back.</p>
+
+      <h2 id="install">Install and sign in</h2>
+      <ol>
+        <li><a href="index.html#download">Download SpotPlot</a> and open <strong>SpotPlot.dmg</strong>.</li>
+        <li>Read the license agreement and click <strong>Agree</strong>.</li>
+        <li>Drag <strong>SpotPlot</strong> into your <strong>Applications</strong> folder, then open it from there.</li>
+        <li>Enter your email address and the license key from your purchase email, then click <strong>Activate SpotPlot</strong>.</li>
+      </ol>
+      <p>SpotPlot needs a Mac with Apple silicon (M1 or newer). Your license works on 2 Macs. SpotPlot updates itself; you can also choose <strong>SpotPlot → Check for Updates</strong>.</p>
+
+      <h2 id="overview">How SpotPlot works</h2>
+      <p>You set up a show once: its <strong>spots</strong> (with their operators and gels), its <strong>scenes</strong> and its <strong>characters</strong>. Then you build the <strong>cue list</strong>, where each light cue is a row and each spot has a column. Everything you print comes from the cue list, so your paperwork is always current.</p>
+      <ol>
+        <li>Create the show and its spots.</li>
+        <li>Add scenes and characters.</li>
+        <li>Build the cue list.</li>
+        <li>Print spot sheets, the caller sheet, the color load, spot notes and the cast sheet.</li>
+      </ol>
+
+      <h2 id="new-show">Create a show</h2>
+      <p>On the Home screen, click <strong>+ New Show</strong> (or press <kbd>⌘N</kbd>).</p>
+      <ul>
+        <li><strong>Show info:</strong> title (the only required field), theatre, producer and an optional show logo. The logo prints on every sheet.</li>
+        <li><strong>Lighting team:</strong> lighting designer, associate, assistant, production electrician and programmer. Their names appear in the page headers.</li>
+        <li><strong>Spots:</strong> a show can have up to 4 spots. See the next section.</li>
+      </ul>
+      <p>Click <strong>Save Show</strong>. You can change any of this later in Show Settings.</p>
+
+      <h2 id="spots">Spots and color frames</h2>
+      <p>For each spot, set the <strong>operator name</strong>, <strong>location</strong> (like "FOH Left") and <strong>fixture type</strong> (pick from the list, or choose Other and type it).</p>
+      <h3>Color frames</h3>
+      <p>Each spot has six color frames, F1 to F6. Type a gel number or name in a frame to search the Rosco, Lee and GAM catalogs, and pick the gel.</p>
+      <ul>
+        <li><strong>Permanent color:</strong> tick it for a gel that always stays in the fixture, then pick the gel. It shows as PERM on the sheets.</li>
+        <li><strong>Copy colors from…:</strong> same gel load on every spot? Fill in one spot, then use this menu on the others to copy all of its frames.</li>
+      </ul>
+
+      <h2 id="dashboard">The show dashboard</h2>
+      <p>Click a show on the Home screen to open its dashboard. From here you reach the <strong>Cue List</strong>, <strong>Scenes</strong>, <strong>Characters</strong>, <strong>Spot Notes</strong> and <strong>Print</strong>. The dashboard also lists the spots and lighting team.</p>
+      <img src="img/dashboard.jpg" alt="The show dashboard, listing the Cue List, Scenes, Characters, Spot Notes and Print, with the spots and lighting team below." loading="lazy">
+      <ul>
+        <li><strong>Show Settings</strong> opens every setting for the show (see <a href="#settings">Show Settings</a>).</li>
+        <li><strong>Export</strong> saves the whole show as a .spotplot file (see <a href="#share">Sharing</a>).</li>
+        <li><strong>iPad Sync</strong> is coming with the iPad app for operators.</li>
+      </ul>
+
+      <h2 id="scenes">Scenes</h2>
+      <p>Scenes break the show into sections. They become the green headers in the cue list and the black bars on your prints.</p>
+      <ul>
+        <li>Add a scene with a <strong>label</strong> (like "Scene 1") and an optional <strong>song</strong>.</li>
+        <li>Mark a scene as an <strong>act break</strong> and it shows in orange.</li>
+        <li>Use the arrows to put scenes in show order, and Edit to change one.</li>
+      </ul>
+      <p>You can also add a scene from the cue list with <strong>+ Scene</strong>.</p>
+
+      <h2 id="characters">Characters</h2>
+      <p>Add each character with the <strong>actor's name</strong>, <strong>costume notes</strong> and a <strong>photo</strong> (click the photo box, or drop an image on it). Characters fill the character menu in every cue.</p>
+      <ul>
+        <li>The <strong>Print</strong> checkbox decides who appears on the printed cast sheet.</li>
+        <li>Drag the handle or use the arrows to reorder; Edit changes a character.</li>
+        <li>Group pickups like "Rizzo and Danny" can be their own character, or typed into a cue as a one-off (see below).</li>
+      </ul>
+      <p>Photos are copied into SpotPlot, so moving or deleting the original file won't break them.</p>
+
+      <h2 id="cue-list">The cue list</h2>
+      <p>Open the cue list from the dashboard. Each row is one light cue; each spot has a column.</p>
+      <img src="img/cuelist.jpg" alt="The cue list with green scene headers, cue numbers on the left and a column for each spot." loading="lazy">
+      <h3>Adding cues</h3>
+      <ul>
+        <li><strong>+ Add cue at end</strong> at the bottom of the list, or press <kbd>⌘=</kbd>.</li>
+        <li>To add a cue between two others, hover between them and click <strong>+ insert cue here</strong>.</li>
+        <li>A new cue picks up where each spot left off: spots that were on keep their character and color; spots that faded out start as Off.</li>
+      </ul>
+      <h3>The cue column</h3>
+      <ul>
+        <li>Click the number to type the <strong>LQ</strong> (the light cue number).</li>
+        <li><strong>T·</strong> is the spot cue number operators use to keep their place. It's printed under each LQ.</li>
+        <li>The menu under the number sets the cue's <strong>scene</strong>. <strong>Delete</strong> removes the cue.</li>
+      </ul>
+      <h3>Renumber T·</h3>
+      <p>Inserting cues makes T· numbers jump around. Click <strong>Renumber T·</strong> at the top of the cue list to number them 1, 2, 3… from top to bottom. Your cue order, scenes and LQ numbers never change. If you've already handed out sheets, reprint them afterward so everyone's T· numbers match.</p>
+      <h3>Getting around</h3>
+      <p>Use <strong>Jump to</strong> to go straight to a scene. Scene headers stay pinned at the top while you scroll; a [bracketed] header means you're partway through that scene.</p>
+
+      <h2 id="cells">Filling in a cue</h2>
+      <p>Each spot's box in a cue holds what that spot does.</p>
+      <table>
+        <tr><th>Field</th><th>What it's for</th></tr>
+        <tr><td>Action</td><td>Click to choose: Pick Up, Fade Up, Fade Down, Fade Out, Fade In Place, Bump Up, Bump Out, Swap To, Slide To, Stay With, Iris In, Iris Out, Iris/Fade Up, Iris/Fade Down, Iris/Fade Out, Up &amp; Out, Dump &amp; Restore, Bump Color, Roll Color, Ballyhoo, Off, or Tracked. Some actions fill in a starting intensity and time for you.</td></tr>
+        <tr><td>Character</td><td>Who the spot is on. Pick from the list, or choose to type a custom name for this cue; SpotPlot offers to add it to the show's characters.</td></tr>
+        <tr><td>Intensity</td><td>Full, a percentage, Glow or Out. Prints as "@ Full".</td></tr>
+        <tr><td>Time</td><td>Fade time in seconds, or Custom.</td></tr>
+        <tr><td>Iris</td><td>FB (Full Body), 3/4, 1/2, H&amp;S (Head &amp; Shoulders), Hd (Head), plus any custom sizes. Click again to clear.</td></tr>
+        <tr><td>Color</td><td>Click the frames in use (F1–F6); two frames print as F1+F2. NC means no color. Hover a frame to see its gel.</td></tr>
+        <tr><td>When</td><td>The cue's "go" moment, like "Nora at the window". Turn on <strong>w/LQ</strong> to make it read "w/ LQ" plus this cue's number; it stays linked if you renumber.</td></tr>
+        <tr><td>Notes</td><td>Anything else for the operator.</td></tr>
+      </table>
+      <p><strong>Off</strong> means the spot isn't used in that cue. <strong>Tracked</strong> clears the cue so the spot simply carries on from before.</p>
+      <p>In When and Notes, select text and press <kbd>⌘B</kbd>, <kbd>⌘I</kbd> or <kbd>⌘U</kbd> for bold, italic or underline. Press <kbd>⌘Z</kbd> to undo.</p>
+
+      <h2 id="more">Highlights, notes and more</h2>
+      <p><strong>Double-click</strong> any spot's box in a cue to open its options:</p>
+      <ul>
+        <li><strong>Highlight</strong> the whole cue, or just its When or Notes line, in yellow or red. Highlights print too.</li>
+        <li><strong>Ignore cue</strong> crosses the cue out without deleting it.</li>
+        <li><strong>Spot note</strong>: a note for the operator. A yellow dot marks cues that have one, and they collect on the Spot Notes screen.</li>
+      </ul>
+      <h3>Drag to copy or swap</h3>
+      <p>Drag one spot's box onto another to <strong>copy</strong> it (with or without the character), or <strong>swap</strong> the two.</p>
+
+      <h2 id="settings">Show Settings</h2>
+      <p>Open <strong>Show Settings</strong> from the dashboard.</p>
+      <table>
+        <tr><th>Section</th><th>What's there</th></tr>
+        <tr><td>Show Info</td><td>Title, theatre, producer, lighting team and logo.</td></tr>
+        <tr><td>Spot Settings</td><td>Each spot's operator, location, fixture and color frames; add a spot; copy colors; and <strong>swap</strong> all cue data between two spots for the whole show.</td></tr>
+        <tr><td>Spot Order</td><td>Drag to change the order spots appear in the cue list and on the caller sheet.</td></tr>
+        <tr><td>Cue Settings</td><td>Choose which cue details (action, character, intensity, iris, color, time, When, Notes) show on the cue list and which print. Hiding never deletes anything.</td></tr>
+        <tr><td>Iris Sizes</td><td>Add your own iris sizes with a short button label.</td></tr>
+        <tr><td>Custom Actions</td><td>Add your own actions, with an optional icon.</td></tr>
+        <tr><td>EOS Control, iPad Sync</td><td>Coming soon.</td></tr>
+      </table>
+
+      <h2 id="spot-notes">Spot notes</h2>
+      <p>The Spot Notes screen shows every spot note, grouped by spot and in cue order. Check a note off once you've given it; edit or delete notes here too. Print them from the Print screen.</p>
+
+      <h2 id="print">Printing</h2>
+      <p>Open <strong>Print</strong> from the dashboard and pick what to print. The preview on the right is the real PDF, page breaks and all, and it updates as you change options. Click <strong>Export PDF…</strong> to save it.</p>
+      <table>
+        <tr><th>Sheet</th><th>What it is</th><th>Options</th></tr>
+        <tr><td>Spot 1, 2…</td><td>One operator's sheet: their gel load across the top, then every cue.</td><td>Hide Off cues, hide Tracked cues, cue range (by T·), T· numbers</td></tr>
+        <tr><td>Caller sheet</td><td>All spots side by side, cue by cue.</td><td>T· numbers</td></tr>
+        <tr><td>Color load</td><td>Every spot's gel frames.</td><td></td></tr>
+        <tr><td>Spot notes</td><td>Notes for operators.</td><td>All spots or one spot</td></tr>
+        <tr><td>Characters</td><td>The cast with photos on one page.</td><td>Costume notes</td></tr>
+      </table>
+      <p>Every sheet has a <strong>Label</strong> field for the page header (like "2-24 Dress Run") and "Page 1 of N" at the bottom. Color changes are highlighted in yellow, including each spot's first color, and a cue never splits across two pages.</p>
+
+      <h2 id="share">Sharing and backups</h2>
+      <h3>Export a show</h3>
+      <p>On the dashboard click <strong>Export</strong> (or press <kbd>⌘E</kbd>) to save a .spotplot file. It holds the entire show: spots, gels, scenes, characters, every cue, notes, highlights, photos and the logo. Use it to send the show to your associate or another designer, or as a backup.</p>
+      <h3>Import a show</h3>
+      <p>Double-click a .spotplot file, or click <strong>Import</strong> on the Home screen (or press <kbd>⌘I</kbd>). The show is added alongside your others, so nothing is overwritten.</p>
+      <div class="note">Shows are saved automatically on your Mac as you work. Exporting a copy before a big change, or at the end of each day of tech, is an easy backup.</div>
+
+      <h2 id="shortcuts">Keyboard shortcuts</h2>
+      <table>
+        <tr><th>Shortcut</th><th>Does</th></tr>
+        <tr><td><kbd>⌘N</kbd></td><td>New show</td></tr>
+        <tr><td><kbd>⌘E</kbd></td><td>Export the open show</td></tr>
+        <tr><td><kbd>⌘I</kbd></td><td>Import a show</td></tr>
+        <tr><td><kbd>⌘=</kbd></td><td>Add a cue (cue list)</td></tr>
+        <tr><td><kbd>⌘Z</kbd></td><td>Undo (cue list)</td></tr>
+        <tr><td><kbd>⌘B</kbd> <kbd>⌘I</kbd> <kbd>⌘U</kbd></td><td>Bold, italic, underline (in When and Notes)</td></tr>
+      </table>
+      <p style="margin-top:40px">Still stuck? See <a href="support.html">Support</a>.</p>
+    </article>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 SpotPlot</span>
+      <nav>
+        <a href="manual.html">Manual</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:wheeler@wheelermoon.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
