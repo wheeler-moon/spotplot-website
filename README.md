@@ -1,6 +1,6 @@
 # SpotPlot website
 
-A plain static site (HTML + CSS, no build step) for spotplot.app, hosted on GitHub Pages.
+A plain static site (HTML + CSS, no build step) for spotplotapp.com, hosted on GitHub Pages.
 
 - `index.html`: home page (features, pricing, FAQ, download)
 - `manual.html`: the user manual
@@ -13,8 +13,8 @@ Preview locally by opening `index.html` in a browser.
 ## Before launch
 
 - [ ] **Stripe checkout links:** the Buy Standard / Buy Student buttons in `index.html` point to `#` (marked `TODO before launch`). Replace them with the Stripe checkout links.
-- [ ] **Domain:** buy spotplot.app, then add a `CNAME` file containing `spotplot.app` and point the domain's DNS at GitHub Pages (Settings → Pages → Custom domain).
-- [ ] **App links:** in SpotPlot, point Help → SpotPlot Website (currently wheelermoon.com) at https://spotplot.app.
+- [x] **Domain:** spotplotapp.com is bought; the `CNAME` file holds it. Still to do: point its DNS at GitHub Pages (see below), then turn on "Enforce HTTPS" in Settings → Pages.
+- [x] **App links:** SpotPlot's Help → SpotPlot Website and Settings → Visit spotplotapp.com point here.
 - [ ] **Policies:** confirm the billing answers on the Support page (cancellation, student verification) match how Stripe is set up.
 - [ ] **Download link:** points to the latest GitHub release's `SpotPlot.dmg`, so new releases need that exact file name.
 
@@ -23,3 +23,17 @@ Preview locally by opening `index.html` in a browser.
 1. On github.com, create a new repository, for example `spotplot-website`.
 2. Push this folder to it.
 3. In the repository, go to Settings → Pages, set Source to "Deploy from a branch", branch `main`, folder `/ (root)`.
+
+## DNS for spotplotapp.com
+
+At the domain registrar, add these records:
+
+| Type | Name | Value |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | wheeler-moon.github.io |
+
+Remove any other A or "parked page" records for `@` first. DNS can take up to a day to spread; then GitHub issues the HTTPS certificate.
