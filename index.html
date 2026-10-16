@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Motion: turned on before the first paint so nothing flashes; turned back off if motion.js never loads -->
+  <script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) { document.documentElement.classList.add('motion'); setTimeout(function () { if (!window.spotplotMotion) document.documentElement.classList.remove('motion'); }, 3000); }</script>
+  <script src="motion.js" defer></script>
 </head>
 <body>
   <header class="nav">

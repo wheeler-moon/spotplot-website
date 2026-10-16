@@ -18,6 +18,7 @@ This site is one of several SpotPlot projects. The shared docs live in the deskt
 - `index.html`: home (features, pricing, FAQ, download)
 - `manual.html`: the user manual
 - `support.html`: support FAQ and contact
+- `motion.js`: the home page's Apple-style motion (entrances on load and on scroll, the growing hero screenshot); hover effects live in `styles.css`. Rules are in DESIGN.md → Motion, and everything stays still with Reduce motion on
 - `styles.css`: all styling; `img/`: screenshots from the invented demo show "The Lighthouse" (never real shows)
 
 ## Rules
