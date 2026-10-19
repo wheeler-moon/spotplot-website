@@ -18,13 +18,15 @@ This site is one of several SpotPlot projects. The shared docs live in the deskt
 - `index.html`: home (features, pricing, FAQ, download)
 - `manual.html`: the user manual
 - `support.html`: support FAQ and contact
+- `privacy.html`, `terms.html`: Privacy Policy and Terms of Service. **Drafts written with Claude; must be reviewed by a lawyer before launch** (see followspot TODO.md). Keep them true to the apps: when the license server, Stripe setup, iPad sync or what the apps collect changes, update them. They say what's collected, never how often the license is checked or what happens offline
+- `fonts/`: Inter, hosted here (no Google Fonts), declared at the top of `styles.css`
 - `motion.js`: the home page's Apple-style motion (entrances on load and on scroll, the growing hero screenshot); hover effects live in `styles.css`. Rules are in DESIGN.md → Motion, and everything stays still with Reduce motion on
 - `styles.css`: all styling; `img/`: screenshots from the invented demo show "The Lighthouse" (never real shows)
 
 ## Rules
 
 - **The manual and support pages must match the app.** When the desktop or iPad app changes how something works or looks, update these pages (and screenshots if they're now wrong) as part of that change.
-- The top bar and footer are repeated in all three pages: change all three.
+- The top bar and footer are repeated in all five pages: change all five.
 - Pricing: Standard and Student are shown; Production and Education are "Coming soon" without prices. Buy buttons stay "Coming soon" until Stripe is set up (see README).
 - The download link points to the newest GitHub release's `SpotPlot.dmg`, so releases must keep that file name.
 - Check pages at desktop and phone widths: nothing should scroll sideways.
