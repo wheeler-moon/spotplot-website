@@ -39,6 +39,7 @@
       <a href="#spot-notes">Spot notes</a>
       <a href="#print">Printing</a>
       <a href="#share">Sharing and backups</a>
+      <a href="#filemaker">Import from FileMaker</a>
       <a href="#shortcuts">Keyboard shortcuts</a>
     </aside>
 
@@ -204,7 +205,17 @@
       <h3>Export a show</h3>
       <p>On the dashboard click <strong>Export</strong> (or press <kbd>⌘E</kbd>) to save a .spotplot file. It holds the entire show: spots, gels, scenes, characters, every cue, notes, highlights, photos and the logo. Use it to send the show to your associate or another designer, or as a backup.</p>
       <h3>Import a show</h3>
-      <p>Double-click a .spotplot file, or click <strong>Import</strong> on the Home screen (or press <kbd>⌘I</kbd>). The show is added alongside your others, so nothing is overwritten.</p>
+      <p>Double-click a .spotplot file, or click <strong>Import ▾</strong> on the Home screen and choose <strong>SpotPlot Show File…</strong> (or press <kbd>⌘I</kbd>). The show is added alongside your others, so nothing is overwritten.</p>
+      <h3 id="filemaker">Import a show from FileMaker</h3>
+      <p>Bring a show over from a FileMaker followspot database. You don't need FileMaker.</p>
+      <ol>
+        <li>Click <strong>Import ▾</strong> on the Home screen and choose <strong>FileMaker Show…</strong> (or File → Import from FileMaker…).</li>
+        <li>Choose the show's <strong>FS_Track.fmp12</strong>. If <strong>SceneList.fmp12</strong> is in the same folder, the scene list (with act breaks) comes too.</li>
+        <li>SpotPlot shows what it found. If the show uses actions or iris sizes that aren't exactly SpotPlot's (like "Intensity Up" or "HB"), pick what each one means, or keep it as a custom action or size.</li>
+        <li>Click <strong>Import Show</strong>. The show opens, ready to work on.</li>
+      </ol>
+      <p>What comes across: the show's details and lighting team, each spot's operator, position and gels (with the permanent color), characters with actors and costume notes, scenes, and every cue with its LQ, T· number, page and what each spot does. A spot with no action that's still on its character becomes <strong>Tracked</strong>; OFF becomes <strong>Off</strong>. The file's per-cue location goes in the cue's Notes line. Names typed in capitals become Title Case (ANNIE → Annie).</p>
+      <p>Not included: the logo, actor photos and the file's action pictures. Add those in SpotPlot. Your FileMaker file is only read, never changed. An encrypted FileMaker file can't be read; open it in FileMaker Pro and save an unencrypted copy first.</p>
       <div class="note">Shows are saved automatically on your Mac as you work. Exporting a copy before a big change, or at the end of each day of tech, is an easy backup.</div>
 
       <h2 id="shortcuts">Keyboard shortcuts</h2>
