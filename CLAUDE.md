@@ -6,7 +6,7 @@ The owner is a lighting designer, not a professional developer. Explain changes 
 
 ## Home base
 
-This site is one of several SpotPlot projects. The shared docs live in the desktop app's repo (`~/Desktop/followspot`):
+This site is one of several SpotPlot projects. The shared docs live in the desktop app's repo (`~/Developer/SpotPlot/followspot`):
 
 - `docs/README.md`: map of every SpotPlot project and how they connect
 - `TODO.md`: the one to-do list (see its Website section)
