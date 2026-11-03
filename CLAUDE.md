@@ -1,6 +1,8 @@
 # CLAUDE.md
 
-The SpotPlot website, live at https://spotplotapp.com. Plain HTML and CSS, no build step, hosted on GitHub Pages from `main` (repo `wheeler-moon/spotplot-website`, public). Pushing `main` publishes the site within about a minute.
+The SpotPlot website, live at https://spotplotapp.com. Plain HTML and CSS, no build step, hosted on GitHub Pages (repo `wheeler-moon/spotplot-website`, public).
+
+**Until launch the public sees only a teaser.** GitHub Pages serves the `teaser` branch (logo, tagline, 1.1.2027; any other address goes back to it), checked out in its own folder at `~/Developer/SpotPlot/spotplot-website-teaser`. The real site lives on `main` and is worked on and previewed locally as usual (`.claude/launch.json` in followspot: `website` on port 8766, `teaser` on 8767); pushing `main` does **not** publish it. To go live (planned mid-December), Wheeler switches Settings → Pages → Branch from `teaser` to `main`.
 
 The owner is a lighting designer, not a professional developer. Explain changes in plain terms.
 
