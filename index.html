@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpotPlot</title>
+  <meta name="description" content="Every Spot, Every Cue, One App. Coming January 1, 2027.">
+  <meta property="og:title" content="SpotPlot">
+  <meta property="og:description" content="Every Spot, Every Cue, One App. Coming January 1, 2027.">
+  <meta property="og:image" content="https://spotplotapp.com/img/icon-256.png">
+  <link rel="icon" href="img/favicon.png">
+  <style>
+    @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 800; font-display: swap; src: url(fonts/inter-latin-ext.woff2) format("woff2");
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+    @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 800; font-display: swap; src: url(fonts/inter-latin.woff2) format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; background: #000; color: #F5F5F7;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex; align-items: center; justify-content: center; padding: 24px 16px; text-align: center;
+    }
+    main { display: flex; flex-direction: column; align-items: center; }
+    .icon { width: 132px; height: 132px; border-radius: 22.5%; }
+    h1 { margin: 28px 0 0; font-size: 56px; font-weight: 800; letter-spacing: -1.4px; line-height: 1.05; }
+    .tag {
+      margin: 14px 0 0; font-size: 22px; font-weight: 600; letter-spacing: -0.3px;
+      background: linear-gradient(90deg, #64D2FF, #0A84FF 60%, #5E5CE6); -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .date { margin: 56px 0 0; font-size: 15px; font-weight: 500; letter-spacing: 0.32em; color: #A1A1A6; padding-left: 0.32em; }
+    @media (max-width: 480px) {
+      .icon { width: 104px; height: 104px; }
+      h1 { font-size: 44px; }
+      .tag { font-size: 18px; }
+      .date { margin-top: 44px; }
+    }
+
+    /* A slow, quiet entrance: icon, then the name and tagline, then the date */
+    @media (prefers-reduced-motion: no-preference) {
+      .icon, h1, .tag, .date { opacity: 0; animation: rise 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+      .icon { animation-delay: 0.2s; }
+      h1 { animation-delay: 0.7s; }
+      .tag { animation-delay: 1.0s; }
+      .date { animation: fade 1.6s ease-in-out 2.0s forwards; }
+      @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+      @keyframes fade { to { opacity: 1; } }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="icon" src="img/icon-256.png" alt="">
+    <h1>SpotPlot</h1>
+    <p class="tag">Every Spot, Every Cue, One App.</p>
+    <p class="date" aria-label="January 1, 2027">1.1.2027</p>
+  </main>
+</body>
+</html>
