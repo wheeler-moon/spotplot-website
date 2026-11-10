@@ -171,6 +171,16 @@
         <li><strong>Copy Whole Cue (All Spots)</strong> and <strong>Paste Whole Cue</strong> copy what every spot does in one cue into another cue.</li>
       </ul>
       <p>Right-click a cue's <strong>LQ number</strong> for the same whole-cue copy and paste, plus Insert Cue Above / Below and Delete.</p>
+      <h3>Select a cue and use the keyboard</h3>
+      <p>Click empty space in a cue, or under its LQ number, to select the whole cue. It turns light blue. Then:</p>
+      <ul>
+        <li><kbd>⌘C</kbd> and <kbd>⌘V</kbd> copy and paste the whole cue. Pasting replaces what every spot does; the LQ, page and scene stay.</li>
+        <li><kbd>⌘D</kbd> duplicates it, <kbd>⌘=</kbd> adds a new cue after it, and <kbd>⌘Delete</kbd> deletes it (it asks first).</li>
+        <li><kbd>⌘1</kbd>, <kbd>⌘2</kbd>… open that spot's cue box (highlight, ignore, spot note).</li>
+        <li><kbd>↑</kbd> <kbd>↓</kbd> move to the cue above or below. Start typing to set its LQ.</li>
+        <li><kbd>Tab</kbd> goes through the cue: each spot's action, character, intensity, time, iris, color, When, w/LQ and notes, then on to the next cue. <kbd>Return</kbd> opens the action picker; use the arrows or type a letter, then <kbd>Return</kbd>. On iris and color, use <kbd>←</kbd> <kbd>→</kbd> and <kbd>Space</kbd>, or type: <kbd>3</kbd> for 3/4, <kbd>H</kbd> for H&amp;S, <kbd>2</kbd> for F2, <kbd>N</kbd> for NC.</li>
+        <li><kbd>Esc</kbd> or clicking somewhere else ends the selection.</li>
+      </ul>
       <p>Press <kbd>⌘Z</kbd> to undo any change in the cue list: an action (with the time and intensity it filled in), a character, a paste, highlight, ignore or clear, adding, inserting or deleting a cue, checking off a note, or renaming a scene. <kbd>⇧⌘Z</kbd> redoes it (or use Edit → Undo and Redo). While you're typing in a box, they undo and redo your typing.</p>
 
       <h2 id="settings">Show Settings</h2>
@@ -241,8 +251,12 @@
         <tr><td><kbd>⌘N</kbd></td><td>New show</td></tr>
         <tr><td><kbd>⌘E</kbd></td><td>Export the open show</td></tr>
         <tr><td><kbd>⌘I</kbd></td><td>Import a show</td></tr>
-        <tr><td><kbd>⌘=</kbd></td><td>Add a cue (cue list)</td></tr>
+        <tr><td><kbd>⌘=</kbd></td><td>Add a cue (after the selected one, if any)</td></tr>
         <tr><td><kbd>⌘G</kbd></td><td>Go to a cue</td></tr>
+        <tr><td><kbd>⌘C</kbd> <kbd>⌘V</kbd></td><td>Copy / paste the selected cue (cue list)</td></tr>
+        <tr><td><kbd>⌘D</kbd></td><td>Duplicate the selected cue</td></tr>
+        <tr><td><kbd>⌘Delete</kbd></td><td>Delete the selected cue</td></tr>
+        <tr><td><kbd>⌘1</kbd>–<kbd>⌘4</kbd></td><td>Open that spot's cue box for the selected cue</td></tr>
         <tr><td><kbd>⌘Z</kbd></td><td>Undo (cue list)</td></tr>
         <tr><td><kbd>⇧⌘Z</kbd></td><td>Redo (cue list)</td></tr>
         <tr><td><kbd>⌘B</kbd> <kbd>⌘I</kbd> <kbd>⌘U</kbd></td><td>Bold, italic, underline (in When and Notes)</td></tr>
