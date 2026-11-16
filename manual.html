@@ -67,7 +67,7 @@
       </ol>
 
       <h2 id="new-show">Create a show</h2>
-      <p>On the Home screen, click <strong>+ New Show</strong> (or press <kbd>⌘N</kbd>).</p>
+      <p>On the Home screen, click <strong>+ New Show</strong>.</p>
       <ul>
         <li><strong>Show info:</strong> title (the only required field), theatre, producer and an optional show logo. The logo prints on every sheet.</li>
         <li><strong>Lighting team:</strong> lighting designer, associate, assistant, production electrician and programmer. Their names appear in the page headers.</li>
@@ -99,7 +99,7 @@
       <p>Scenes break the show into sections. They become the green headers in the cue list and the black bars on your prints.</p>
       <ul>
         <li>Add a scene with a <strong>label</strong> (like "Scene 1"), a <strong>song</strong>, or both.</li>
-        <li>Mark a scene as an <strong>act break</strong> and it shows in orange. Act breaks always show in the cue list and on spot and caller sheets, even with no cues of their own; other scenes show once they have cues.</li>
+        <li>Mark a scene as an <strong>act break</strong> and it shows in orange, on the cue list and on prints. On the cue list a scene or act break shows once it has cues; spot and caller sheets always print act breaks.</li>
         <li>Drag a scene's handle to put scenes in show order, and Edit to change one.</li>
       </ul>
       <p>You can also add a scene from the cue list with <strong>+ Scene</strong>.</p>
@@ -118,7 +118,7 @@
       <img src="img/cuelist.jpg" alt="The cue list with green scene headers, cue numbers on the left and a column for each spot." loading="lazy">
       <h3>Adding cues</h3>
       <ul>
-        <li><strong>+ Add cue at end</strong> at the bottom of the list, or press <kbd>⌘=</kbd>.</li>
+        <li><strong>+ Add cue at end</strong> at the bottom of the list, or press <kbd>⌘N</kbd>.</li>
         <li>To add a cue between two others, hover between them and click <strong>+ insert cue here</strong>. To make a new first cue for a scene (or a cue under an act break), hover just below the scene's header and click it there.</li>
         <li>A new cue picks up where each spot left off: spots that were on keep their characters and color; spots that faded out start as Off.</li>
       </ul>
@@ -141,10 +141,10 @@
       <table>
         <tr><th>Field</th><th>What it's for</th></tr>
         <tr><td>Action</td><td>Click to choose: Pick Up, Increase, Decrease, Fade Out, Fade In Place, Bump Up, Bump Out, Swap To, Slide To, Stay With, Iris In, Iris Out, Iris/Fade Up, Iris/Fade Down, Iris/Fade Out, Up &amp; Out, Dump &amp; Restore, Bump Color, Roll Color, Ballyhoo, Off, or Tracked. Some actions fill in a starting intensity and time for you. Changing a cue to <strong>Tracked</strong> clears it (time, intensity, When, w/LQ, notes) and carries on from that spot's cue above: the same character, iris size and color frames. Change the <strong>iris or color</strong> and it carries down until the spot goes out, including its Fade Out or Bump Out cue. Iris stops before an iris action (Iris In, Iris Out, Iris/Fade…), and color before Bump Color or Roll Color. Change a <strong>character</strong> and the new name follows that person down to their fade out, stopping at Off, a new Pick Up, Swap To or Slide To, or a cue on someone else.</td></tr>
-        <tr><td>Character</td><td>Who the spot is on. Pick from the list, or choose to type a custom name for this cue; SpotPlot offers to add it to the show's characters (Keep as Custom is the default). Tick "Remember my choice for this show" to stop being asked; View → Ask About New Characters Again turns the question back on. Click <strong>+</strong> beside the character to add a second, then a third ("Pick Up Bob &amp; Matt"); × takes one out. Prints and the iPad show them all.</td></tr>
+        <tr><td>Character</td><td>Who the spot is on. After Pick Up, Bump Up, Swap To or Slide To, the character box is ready: type a name or use the arrows. Pick from the list, or choose to type a custom name for this cue; SpotPlot offers to add it to the show's characters (Keep as Custom is the default). Tick "Remember my choice for this show" to stop being asked; View → Ask About New Characters Again turns the question back on. Click <strong>+</strong> beside the character to add a second, then a third ("Pick Up Bob &amp; Matt"); × takes one out. Prints and the iPad show them all.</td></tr>
         <tr><td>Intensity</td><td>Full, a percentage, Glow or Out. Prints as "@ Full".</td></tr>
         <tr><td>Time</td><td>Fade time in seconds, or Custom.</td></tr>
-        <tr><td>Iris</td><td>FB (Full Body), 3/4, 1/2, H&amp;S (Head &amp; Shoulders), Hd (Head), plus any sizes you add, in the order set in Show Settings → Iris Sizes. Click again to clear. In a narrow window the sizes fold into one button showing the current size; click it to choose.</td></tr>
+        <tr><td>Iris</td><td>FB (Full Body), 3/4, 1/2, H&amp;S (Head &amp; Shoulders), Hd (Head), plus any sizes you add, in the order set in Show Settings → Iris Sizes. Click again to clear. In a narrow window the sizes fold into one button showing the current size; click it to choose. On prints, an iris size that's the same as before prints grey.</td></tr>
         <tr><td>Color</td><td>Click the frames in use (F1, F2…); two frames print as F1+2. NC means no color. Hover a frame to see its gel. Lit frames show bright when the spot's color changes in that cue and muted when it's the same as before, so color changes stand out. Printed sheets do the same: a change is highlighted in yellow and an unchanged color prints grey.</td></tr>
         <tr><td>When</td><td>The cue's "go" moment, like "Nora at the window". Turn on <strong>w/LQ</strong> to make it read "w/ LQ" plus this cue's number; it stays linked if you renumber.</td></tr>
         <tr><td>Notes</td><td>Anything else for the operator.</td></tr>
@@ -176,7 +176,7 @@
       <p>Click empty space in a cue, or under its LQ number, to select the whole cue. It turns light blue. Then:</p>
       <ul>
         <li><kbd>⌘C</kbd> and <kbd>⌘V</kbd> copy and paste the whole cue. Pasting replaces what every spot does; the LQ, page and scene stay.</li>
-        <li><kbd>⌘D</kbd> duplicates it, <kbd>⌘=</kbd> adds a new cue after it, and <kbd>⌘Delete</kbd> deletes it (it asks first).</li>
+        <li><kbd>⌘D</kbd> duplicates it, <kbd>⌘N</kbd> adds a new cue after it, and <kbd>⌘Delete</kbd> deletes it (it asks first).</li>
         <li><kbd>⌘1</kbd>, <kbd>⌘2</kbd>… open that spot's cue box (highlight, ignore, spot note).</li>
         <li><kbd>↑</kbd> <kbd>↓</kbd> move to the cue above or below. Start typing to set its LQ.</li>
         <li><kbd>Tab</kbd> goes through the cue: each spot's action, character, intensity, time, iris, color, When, w/LQ and notes, then on to the next cue. <kbd>Return</kbd> opens the action picker; use the arrows or type a letter, then <kbd>Return</kbd>. On iris and color, use <kbd>←</kbd> <kbd>→</kbd> and <kbd>Space</kbd>, or type: <kbd>3</kbd> for 3/4, <kbd>H</kbd> for H&amp;S, <kbd>2</kbd> for F2, <kbd>N</kbd> for NC.</li>
@@ -249,10 +249,9 @@
       <h2 id="shortcuts">Keyboard shortcuts</h2>
       <table>
         <tr><th>Shortcut</th><th>Does</th></tr>
-        <tr><td><kbd>⌘N</kbd></td><td>New show</td></tr>
         <tr><td><kbd>⌘E</kbd></td><td>Export the open show</td></tr>
         <tr><td><kbd>⌘I</kbd></td><td>Import a show</td></tr>
-        <tr><td><kbd>⌘=</kbd></td><td>Add a cue (after the selected one, if any)</td></tr>
+        <tr><td><kbd>⌘N</kbd></td><td>Add a cue (after the selected one, if any)</td></tr>
         <tr><td><kbd>⌘G</kbd></td><td>Go to a cue</td></tr>
         <tr><td><kbd>⌘C</kbd> <kbd>⌘V</kbd></td><td>Copy / paste the selected cue (cue list)</td></tr>
         <tr><td><kbd>⌘D</kbd></td><td>Duplicate the selected cue</td></tr>
